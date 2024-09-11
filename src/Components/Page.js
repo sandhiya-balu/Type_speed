@@ -60,13 +60,13 @@ function App() {
 
   function handleKeyDown({keyCode, key}) {
     
-    if (keyCode === 32) {
+    if (key === " ") {
       checkMatch()
       setCurrInput("")
       setCurrWordIndex(currWordIndex + 1)
       setCurrCharIndex(-1)
    
-    } else if (keyCode === 8) {
+    } else if (key==='Backspace') {
       setCurrCharIndex(currCharIndex - 1)
       setCurrChar("")
     } else {
